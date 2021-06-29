@@ -213,7 +213,7 @@ public class Consultas {
 			System.out.println(query);
 			
 			
-			resultObject = c.newInstance();
+			resultObject = c.getConstructor().newInstance();
 			Connection conexion = UConexion.ObtenerConexion();
 			PreparedStatement ps = conexion.prepareStatement(query);
 			ResultSet rs = ps.executeQuery();
@@ -247,24 +247,7 @@ public class Consultas {
 		if(anotationTabla != null) {
 			query = query.replace("TABLA", anotationTabla.nombre().toLowerCase());
 		}		
-		
-//		try {
-//			
-//
-//			
-//		} catch (IllegalAccessException |IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (InstantiationException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-
-		
-		
+				
 		return resultObject;
 	}
 	
