@@ -26,14 +26,14 @@ public class Program {
 //			}
 			
 			//probado. Recordar que el dni no coincide con el id de la db
-			//Persona p4 = new Persona("Natalio Modificado","Ruiz",7);
-//			Consultas.modificar(p4);
+			//Persona p4 = new Persona("Natalio Modificado","Ruiz",2);
+			//Consultas.modificar(p4);
 			
 			//probado.
 			//Consultas.eliminar(p4);
 			
 			//probado. 
-//			Persona p5 = (Persona)Consultas.obtenerPorId(Persona.class, 11);
+//			Persona p5 = (Persona)Consultas.obtenerPorId(Persona.class, 2);
 //			System.out.println(p5.toString());
 			
 			

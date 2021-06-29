@@ -47,8 +47,8 @@ public class Consultas {
 				}
 			}
 		}
-		query = query.replace("COLUMNAS", columnas.toLowerCase().substring(0, (columnas.length()-1)));
-		query = query.replace("VALORES", valores.toLowerCase().substring(0, (valores.length()-1)));
+		query = query.replace("COLUMNAS", columnas.substring(0, (columnas.length()-1)));
+		query = query.replace("VALORES", valores.substring(0, (valores.length()-1)));
 		
 		//System.out.println(query);
 		
@@ -107,8 +107,8 @@ public class Consultas {
 							.concat(Integer.toString(atributo.getInt(o))));
 				}
 			}
-			query = query.replace("COLUMNASVALOR", columnasConValor.toLowerCase().substring(0, (columnasConValor.length()-1)));
-			query = query.replace("CONDICION", condicion.toLowerCase().substring(0, (condicion.length())));
+			query = query.replace("COLUMNASVALOR", columnasConValor.substring(0, (columnasConValor.length()-1)));
+			query = query.replace("CONDICION", condicion.substring(0, (condicion.length())));
 		}
 		catch(IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
 			e.printStackTrace();
@@ -159,7 +159,7 @@ public class Consultas {
 							.concat(Integer.toString(atributo.getInt(o))));
 				}
 			}
-			query = query.replace("CONDICION", condicion.toLowerCase().substring(0, (condicion.length())));
+			query = query.replace("CONDICION", condicion.substring(0, (condicion.length())));
 		}
 		catch(IllegalArgumentException | IllegalAccessException | SecurityException e) {
 			e.printStackTrace();
@@ -208,7 +208,7 @@ public class Consultas {
 							.concat(objId == String.class ? "'"+((String)id)+"'" : String.valueOf(id)));
 				}
 			}
-			query = query.replace("CONDICION", condicion.toLowerCase().substring(0, (condicion.length())));
+			query = query.replace("CONDICION", condicion.substring(0, (condicion.length())));
 			
 			System.out.println(query);
 			

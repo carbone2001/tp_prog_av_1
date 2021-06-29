@@ -2,15 +2,15 @@ import Anotaciones.Columna;
 import Anotaciones.Id;
 import Anotaciones.Tabla;
 
-@Tabla(nombre="Tabla_Personas")
+@Tabla(nombre="tabla_personas")
 public class Persona {
 	
-	@Columna(nombre="columna_Nombre")
+	@Columna(nombre="columna_nombre")
 	public String nombre;
-	@Columna(nombre="columna_Apellido")
+	@Columna(nombre="columna_apellido")
 	public String apellido;
 	@Id
-	@Columna(nombre="columna_Dni")
+	@Columna(nombre="columna_dni")
 	public int dni;
 	
 	
